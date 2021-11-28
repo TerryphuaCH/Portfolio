@@ -403,7 +403,7 @@ button:hover, a:hover {
 
 .body1 {
   top: 50%;
-  left: 100%;
+  left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
 }
