@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contact | Portfolio</title>
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="leavecontact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 
@@ -30,6 +31,7 @@
             <input type="checkbox" id="show-services">
             <label for="show-services">Activities</label>
           </li>
+          
           <li><a href="https://www.instagram.com/">Achievements</a></li>
           <li><a href="Contact.html">Contact </a></li>
         </ul>
@@ -37,24 +39,39 @@
     </nav>
   </div>
 
-<br><br><br><br>
-<div class="card">
-  <img src="https://i.imgur.com/LLSLbbW.jpg" alt="Peppy" style="width:100%">
-  <h1>Peppy Phua</h1>
-  <br>
-  <p class="title">CEO & Founder of woof woof</p>
-  <br>
-  <p> I'm such a mal-tease.</p>
-  <div style="margin: 24px 0;">
-    <an href="#"><i class="fa fa-dribbble"></i></an> 
-    <an href="#"><i class="fa fa-twitter"></i></an>  
-    <an href="#"><i class="fa fa-linkedin"></i></an>  
-    <an href="#"><i class="fa fa-facebook"></i></an> 
-  </div>
-  <p><a href="leavecontact.html"><button>Contact</button></a></p>
-</div>
 
+<br><br><br><br><br><br><br><br><br>
+<div class="xad-table-container" id="xadsTableContainer">
+  
+        <div class="xad-table-row">
+            <div class="xad-table-column xad-name xad-header">Name</div>
+            <div class="xad-table-column xad-phone xad-header">Phone</div>
+            <div class="xad-table-column xad-birthday xad-header">Birthday</div>
+            <div class="xad-table-column xad-address xad-header">Address</div>
+            <div class="xad-table-column xad-header xad-add-entry" id="xadAddNewEntry">+</div>
+        </div>
+        <span id="tableBody"></span>
+    </div>
+    <div class="disable-modal" id="backdrop"></div>
+    <div class="disable-modal" id="newPersonModal">
+        <h1>Add Contact</h1>
+        <label for="newPersonName">Name</label>
+        <input type="text" id="newPersonName">
 
+        <label for="newPersonPhone">Phone</label>
+        <input type="text" id="newPersonPhone">
+
+        <label for="newPersonBirthday">Birthday</label>
+        <input type="date" id="newPersonBirthday">
+
+        <label for="newPersonAddress">Address</label>
+        <input type="text" id="newPersonAddress">
+
+        <button id="newCancelButton">Cancel</button>
+        <button id="newPersonSubmitButton">Submit</button>
+    </div>
+    <button id="SortButton" style="position: absolute; left: 0px; bottom: 0px;">Sort</button>
+    <script src="script.js"></script>
 
 
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
