@@ -265,6 +265,10 @@ body {
   background-color: #f1f1f1;
   padding: 20px;
   font-family: Arial;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 /* Center website */
@@ -401,12 +405,7 @@ button:hover, a:hover {
   box-sizing: border-box;
 }
 
-.body1 {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
+
 
 .container {
   height: 450px;
