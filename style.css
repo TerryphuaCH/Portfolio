@@ -394,12 +394,12 @@ h1 {
 
 .dropdown-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 10px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {background-color: grey;}
+.dropdown-content a:hover {background-color: rgb(34, 34, 34);}
 
 .dropdown:hover .dropdown-content {display: block;}
 
