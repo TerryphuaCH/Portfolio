@@ -117,7 +117,7 @@ nav .content .links{
   background: #171c24;
   top: 80px;
   z-index: -1;
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
 }
 .content .links li:hover > ul{
