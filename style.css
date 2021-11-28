@@ -399,7 +399,7 @@ h1 {
   display: block;
 }
 
-.dropdown-content a:hover {background-color:transparent;}
+.dropdown-content a:hover {background-color:red;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
