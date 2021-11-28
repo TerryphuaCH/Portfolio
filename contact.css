@@ -265,10 +265,7 @@ body {
   background-color: #f1f1f1;
   padding: 20px;
   font-family: Arial;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
+  
 }
 
 /* Center website */
@@ -399,79 +396,3 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-
-
-.container {
-  height: 450px;
-  width: 300px;
-  box-shadow: 0 10px 20px black;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  font-family: 'Abel', sans-serif;
-}
-
-.image {
-  height: 100px;
-  width: 100px;
-  background-image: 
-  background-size: cover;
-  border-radius: 50%;
-  border: 8px solid white;
-  position: relative;
-  top: 190px;
-  margin-left: 170px;
-  box-shadow: 0 2px 15px rgb(58, 54, 54);
-  transform: rotate(-20deg);
-}
-
-.shape {
-  height: 250px;
-  width: 400px;
-  
-  margin-left: -20px;
-  position: relative;
-  top: -80px;
-  
-  transform: rotate(25deg);
-}
-
-h3 {
-  margin-bottom: 10px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.title {
-  color: rgb(105, 100, 109);
-}
-
-p {
-  padding-left: 30px;
-  padding-right: 30px;
-  color: rgb(105, 100, 109);
-}
-
-.icons {
-  margin-top: 15px;
-}
-
-.icons i {
-  margin-left: 18px;
-  font-size: 30px;
-  transition: 0.3s;
-  color: rgb(40, 163, 194);
-  ;
-}
-
-.icons i:hover {
-  transform: scale(1.1);
-  color: rgb(18, 192, 235);
-}
