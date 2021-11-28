@@ -372,7 +372,7 @@ h1 {
 
 .dropbtn {
   background-color:transparent;
-  color: white;
+  color: blue;
   padding: 16px;
   font-size: 18px;
   border: none;
@@ -399,7 +399,7 @@ h1 {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: rgb(34, 34, 34);}
+.dropdown-content a:hover {background-color:transparent;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
