@@ -54,7 +54,7 @@ a.active,a:hover{
 #check{
   display: none;
 }
-@media (max-width: 767px){
+@media (max-width: 1024px){
   label.logo{
     font-size: 30px;
     padding-left: 50px;
@@ -63,7 +63,7 @@ a.active,a:hover{
     font-size: 16px;
   }
 }
-@media (max-width: 767px){
+@media (max-width: 1024px){
   .checkbtn{
     display: block;
   }
@@ -126,7 +126,7 @@ a.active,a:hover{
     border-radius: 5px!important;
   }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 1024px){
   .content .logo a{
     font-size: 27px;
   }
@@ -205,14 +205,14 @@ h1 {
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .column {
     width: 50%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .column {
     width: 100%;
   }
