@@ -352,11 +352,10 @@ h1 {
 }
 
 .footer {
-   position: sticky;
+   position: relative;
    left: 0;
-   bottom: 10;
+   bottom: 0;
    width: 100%;
-   background-color: ;
    color: black;
    text-align: center;
 }
@@ -365,7 +364,6 @@ h1 {
   width:800px;
   margin: 0 auto;
   text-align: center;
-  line-height:;
   position: relative;
   top: 80px;
 }
