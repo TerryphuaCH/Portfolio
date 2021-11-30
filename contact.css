@@ -11,14 +11,14 @@ body{
   
 }
 nav{
-  background: black;
-  height: 80px;
+  background: rgb(37, 37, 37);
+  height: 70px;
   width: 100%;
 }
 label.logo{
   color: white;
   font-size: 35px;
-  line-height: 80px;
+  line-height: 70px;
   padding: 0 100px;
   font-weight: bold;
 }
@@ -28,7 +28,7 @@ nav ul{
 }
 nav ul li{
   display: inline-block;
-  line-height: 80px;
+  line-height: 70px;
   margin: 0 5px;
 }
 nav ul li a{
@@ -54,7 +54,7 @@ a.active,a:hover{
 #check{
   display: none;
 }
-@media (max-width: 1020px){
+@media (max-width: 1200px){
   label.logo{
     font-size: 30px;
     padding-left: 50px;
@@ -63,7 +63,7 @@ a.active,a:hover{
     font-size: 16px;
   }
 }
-@media (max-width: 1020px){
+@media (max-width: 1200px){
   .checkbtn{
     display: block;
   }
@@ -94,281 +94,66 @@ a.active,a:hover{
   }
 }
 
-/* Dropdown Menu code start */
-.content .links ul{
-  position: absolute;
-  background: #171c24;
-  top: 80px;
-  z-index: -1;
-  opacity: 0;
-  visibility: hidden;
-}
-.content .links li:hover > ul{
-  top: 70px;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease;
-}
-.content .links ul li a{
-  display: block;
-  width: 100%;
-  line-height: 30px;
-  border-radius: 0px!important;
-}
-.content .links ul ul{
-  position: absolute;
-  top: 0;
-  right: calc(-100% + 8px);
-}
-.content .links ul li{
-  position: relative;
-}
-.content .links ul li:hover ul{
-  top: 0;
-}
-/* Responsive code start */
-@media screen and (max-width: 1250px){
-  .wrapper nav{
-    max-width: 100%;
-    padding: 0 20px;
-  }
-  nav .content .links{
-    margin-left: 30px;
-  }
-  .content .links li a{
-    padding: 8px 13px;
-  }
-  .wrapper .search-box{
-    max-width: calc(100% - 100px);
-  }
-  .wrapper .search-box input{
-    padding: 0 100px 0 15px;
-  }
-}
-@media screen and (max-width: 900px){
-  .wrapper .menu-icon{
-    display: block;
-  }
-  .wrapper #show-menu:checked ~ .menu-icon i::before{
-    content: "\f00d";
-  }
-  nav .content .links{
-    display: block;
-    position: fixed;
-    background: #14181f;
-    height: 100%;
-    width: 100%;
-    top: 70px;
-    left: -100%;
-    margin-left: 0;
-    max-width: 350px;
-    overflow-y: auto;
-    padding-bottom: 100px;
-    transition: all 0.3s ease;
-  }
-  nav #show-menu:checked ~ .content .links{
-    left: 0%;
-  }
-  .content .links li{
-    margin: 15px 20px;
-  }
-  .content .links li a,
-  .content .links li label{
-    line-height: 40px;
-    font-size: 20px;
-    display: block;
-    padding: 8px 18px;
-    cursor: pointer;
-  }
-  .content .links li a.desktop-link{
-    display: none;
-  }
-  /* dropdown responsive code start */
-  .content .links ul,
-  .content .links ul ul{
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    background: none;
-    max-height: 0px;
-    overflow: hidden;
-  }
-  .content .links #show-features:checked ~ ul,
-  .content .links #show-services:checked ~ ul,
-  .content .links #show-items:checked ~ ul{
-    max-height: 100vh;
-  }
-  .content .links ul li{
-    margin: 7px 20px;
-  }
-  .content .links ul li a{
-    font-size: 18px;
-    line-height: 30px;
-    border-radius: 5px!important;
-  }
-}
-@media screen and (max-width: 400px){
-  .wrapper nav{
-    padding: 0 10px;
-  }
-  .content .logo a{
-    font-size: 27px;
-  }
-  .wrapper .search-box{
-    max-width: calc(100% - 70px);
-  }
-  .wrapper .search-box .go-icon{
-    width: 30px;
-    right: 0;
-  }
-  .wrapper .search-box input{
-    padding-right: 30px;
-  }
-}
-.dummy-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  z-index: -1;
-  padding: 0 20px;
+h1 {
+  width:550px;
+  margin: 0 auto;
   text-align: center;
-  transform: translate(-50%, -50%);
-}
-.dummy-text h2{
-  font-size: 45px;
-  margin: 5px 0;
+  line-height:1;
+  position: relative;
+  top: 30%;
+  font-size: 50px;
+  word-break: break-all;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-  
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
+/* Float four columns side by side */
 .column {
   float: left;
-  width: 25%;
+  width: 15%;
+  padding: 0 10px;
+  width: 19.55%;
 }
 
-/* Clear floats after rows */ 
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
-.content1 {
-  background-color: white;
-  padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
- 
 
-.summary-me{
-  width:550px;
-  margin: 0 auto;
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
   text-align: center;
-  line-height:5;
-  position: relative;
-  top: 30px;
-}
-
-.summary-all{
-  width:700px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  top: 30px;
-  line-height: 2.3;
+  background-color: #f1f1f1; 
+  
 }
 
 .footer {
-   position: sticky;
+   position: absolute;
    left: 0;
-   bottom: 70%;
+   bottom: -100px;
    width: 100%;
-   background-color: grey;
    color: black;
    text-align: center;
 }
-
-.summary-memore{
-  width:800px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  top: 80px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
-
-.title {
-  color: grey;
-  font-size: 18px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
-}
-

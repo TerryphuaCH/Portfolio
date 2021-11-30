@@ -11,14 +11,14 @@ body{
   
 }
 nav{
-  background: black;
-  height: 80px;
+  background: rgb(37, 37, 37);
+  height: 70px;
   width: 100%;
 }
 label.logo{
   color: white;
   font-size: 35px;
-  line-height: 80px;
+  line-height: 70px;
   padding: 0 100px;
   font-weight: bold;
 }
@@ -28,7 +28,7 @@ nav ul{
 }
 nav ul li{
   display: inline-block;
-  line-height: 80px;
+  line-height: 70px;
   margin: 0 5px;
 }
 nav ul li a{
@@ -46,7 +46,7 @@ a.active,a:hover{
   font-size: 30px;
   color: white;
   float: right;
-  line-height: 80px;
+  line-height: 70px;
   margin-right: 40px;
   cursor: pointer;
   display: none;
@@ -54,7 +54,7 @@ a.active,a:hover{
 #check{
   display: none;
 }
-@media (max-width: 1024px){
+@media (max-width: 1200px){
   label.logo{
     font-size: 30px;
     padding-left: 50px;
@@ -63,16 +63,16 @@ a.active,a:hover{
     font-size: 16px;
   }
 }
-@media (max-width: 1024px){
+@media (max-width: 1200px){
   .checkbtn{
     display: block;
   }
   ul{
     position: fixed;
     width: 20%;
-    height: 80%;
-    background: black;
-    top: 80px;
+    height: 70%;
+    background: rgb(37, 37, 37);
+    top: 9.5%;
     left: -100%;
     text-align: left;
     transition: all .5s;
@@ -87,82 +87,13 @@ a.active,a:hover{
   }
   a:hover,a.active{
     background: none;
-    color: rgb(228, 3, 3);
+    color: greenyellow;
   }
   #check:checked ~ ul{
     left: 0;
   }
 }
 
-
-
-
-
-
-
-
-
-/* dropdown responsive code start */
-  .content .links ul,
-  .content .links ul ul{
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    background: none;
-    max-height: 0px;
-    overflow: hidden;
-  }
-  .content .links #show-features:checked ~ ul,
-  .content .links #show-services:checked ~ ul,
-  .content .links #show-items:checked ~ ul{
-    max-height: 100vh;
-  }
-  .content .links ul li{
-    margin: 7px 20px;
-  }
-  .content .links ul li a{
-    font-size: 18px;
-    line-height: 30px;
-    border-radius: 5px!important;
-  }
-
-@media screen and (max-width: 1024px){
-  .content .logo a{
-    font-size: 27px;
-  }
-  .wrapper .search-box{
-    max-width: calc(100% - 70px);
-  }
-  .wrapper .search-box .go-icon{
-    width: 30px;
-    right: 0;
-  }
-  .wrapper .search-box input{
-    padding-right: 30px;
-  }
-}
-.dummy-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  z-index: -1;
-  padding: 0 20px;
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
-.dummy-text h2{
-  font-size: 45px;
-  margin: 5px 0;
-}
-
-
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
 
 /* Center website */
 .main {
@@ -363,3 +294,4 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
 .user__info > small {
   color: #666;
 }
+

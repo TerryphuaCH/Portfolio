@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -9,75 +8,59 @@
   <link rel="stylesheet" href="leavecontact.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-
-
-
-<body>
-  <div class="wrapper">
+  <body>
     <nav>
-      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
-      <div class="content">
-      <div class="logo"><a href="home.html">Terry's Portfolio</a></div>
-        <ul class="links">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li>
-            <a href="hobbies.html" class="desktop-link">Hobbies</a>
-            <input type="checkbox" id="show-features">
-            <label for="show-features">Hobbies</label>
-          </li>
-          <li>
-            <a href="activities.html" class="desktop-link">Activities</a>
-            <input type="checkbox" id="show-services">
-            <label for="show-services">Activities</label>
-          </li>
-          
-          <li><a href="https://c.tenor.com/Kr7xXQBtTb8AAAAd/nothing-rege-jean-page.gif">Achievements</a></li>
-          <li><a href="contact.html">Contact </a></li>
-        </ul>
-      </div>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Terry's Portfolio</label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
     </nav>
-  </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="xad-table-container" id="xadsTableContainer">
+          
+                <div class="xad-table-row">
+                    <div class="xad-table-column xad-name xad-header">Name</div>
+                    <div class="xad-table-column xad-phone xad-header">Phone</div>
+                    <div class="xad-table-column xad-birthday xad-header">Birthday</div>
+                    <div class="xad-table-column xad-address xad-header">Address</div>
+                    <div class="xad-table-column xad-header xad-add-entry" id="xadAddNewEntry">+</div>
+                </div>
+                <span id="tableBody"></span>
+            </div>
+            <div class="disable-modal" id="backdrop"></div>
+            <div class="disable-modal" id="newPersonModal">
+                <h1>Add Contact</h1>
+                <label for="newPersonName">Name</label>
+                <input type="text" id="newPersonName">
+
+                <label for="newPersonPhone">Phone</label>
+                <input type="text" id="newPersonPhone">
+
+                <label for="newPersonBirthday">Birthday</label>
+                <input type="date" id="newPersonBirthday">
+
+                <label for="newPersonAddress">Address</label>
+                <input type="text" id="newPersonAddress">
+
+                <button id="newCancelButton">Cancel</button>
+                <button id="newPersonSubmitButton">Submit</button>
+            </div>
+            <button id="SortButton" style="position: absolute; left: 100%; bottom: 0px;"></button>
+            <script src="script.js"></script>
 
 
-<br><br><br><br><br><br><br><br><br>
-<div class="xad-table-container" id="xadsTableContainer">
-  
-        <div class="xad-table-row">
-            <div class="xad-table-column xad-name xad-header">Name</div>
-            <div class="xad-table-column xad-phone xad-header">Phone</div>
-            <div class="xad-table-column xad-birthday xad-header">Birthday</div>
-            <div class="xad-table-column xad-address xad-header">Address</div>
-            <div class="xad-table-column xad-header xad-add-entry" id="xadAddNewEntry">+</div>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
+        <div class="footer">
+          <p>©2021 by Terryphua</p>
         </div>
-        <span id="tableBody"></span>
-    </div>
-    <div class="disable-modal" id="backdrop"></div>
-    <div class="disable-modal" id="newPersonModal">
-        <h1>Add Contact</h1>
-        <label for="newPersonName">Name</label>
-        <input type="text" id="newPersonName">
-
-        <label for="newPersonPhone">Phone</label>
-        <input type="text" id="newPersonPhone">
-
-        <label for="newPersonBirthday">Birthday</label>
-        <input type="date" id="newPersonBirthday">
-
-        <label for="newPersonAddress">Address</label>
-        <input type="text" id="newPersonAddress">
-
-        <button id="newCancelButton">Cancel</button>
-        <button id="newPersonSubmitButton">Submit</button>
-    </div>
-    <button id="SortButton" style="position: absolute; left: 100%; bottom: 0px;"></button>
-    <script src="script.js"></script>
-
-
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><hr>
-<div class="footer">
-  <p>©2021 by Terryphua</p>
-</div>
-
   </body>
 </html>
