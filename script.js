@@ -18,7 +18,7 @@ let enableDisableNameInput = (option) => {
         newPersonName.disabled = true;
 }
 
-/*will refresh the table. So, the contact details are sorted in order (A-Z)*/ */
+/*will refresh the table. So, the contact details are sorted in order (A-Z)*/ 
 let refreshTable = () => {
     let xadsTableKeys = Object.keys(xadsTable);
     let tableContaier = document.getElementById('xadsTableContainer');
