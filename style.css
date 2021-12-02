@@ -102,8 +102,7 @@ a.active,a:hover{
 }
 
 h1 {
-  font-size: 50px;
-  word-break: break-all;
+  font-size: 50%;
 }
 
 .row {
@@ -150,8 +149,7 @@ h1 {
 }
 
 h1 {
-  width:550px;
-  margin: 0 auto;
+  margin: 0 ;
   text-align: center;
   line-height:1;
   position: relative;

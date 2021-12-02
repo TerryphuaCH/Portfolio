@@ -97,8 +97,6 @@ a.active,a:hover{
 
 
 h1 {
-  width:550px;
-  margin: 0 auto;
   text-align: center;
   line-height:1;
   position: relative;
@@ -161,6 +159,10 @@ body {
 }
 
 .h2{
-  position: 1000px;
-
+  text-align: center;
+  line-height:1;
+  position: relative;
+  top: 30%;
+  font-size: 50px;
+  word-break: break-all;
 }
