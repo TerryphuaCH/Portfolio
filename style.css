@@ -211,7 +211,8 @@ body {
   height: 100vh;
 }
 
-/*The container here is to surround the card*/
+/*The container here is to surround the card
+got it from https://www.w3schools.com/w3css/w3css_cards.asp*/
 .container {
   display: flex;
   flex-wrap: wrap;

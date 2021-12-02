@@ -8,7 +8,9 @@
 }
 body{
   font-family: montserrat;
-  
+
+
+/* This is to produce the navigation bar out*/
 }
 nav{
   background: rgb(37, 37, 37);
@@ -38,6 +40,8 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
+
+/*When hover mouse over turns to the colour*/
 a.active,a:hover{
   background: grey;
   transition: .5s;
@@ -63,6 +67,8 @@ a.active,a:hover{
     font-size: 16px;
   }
 }
+/*Use for mobile view when website is in mobile view.
+The hamburger menu will show up once it is in mobile view*/
 @media (max-width: 1200px){
   .checkbtn{
     display: block;
