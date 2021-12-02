@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   padding: 0;
@@ -8,9 +10,10 @@
 }
 body{
   font-family: montserrat;
-  
+
+
 }
-nav{
+nav {
   background: rgb(37, 37, 37);
   height: 70px;
   width: 100%;
