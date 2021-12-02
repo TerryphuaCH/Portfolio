@@ -153,7 +153,6 @@ h1{
 }
 .xad-table-container{
     font-size: 20px;
-    margin-top: 35px;
     width: 80%;
     margin: 300px;
 }
@@ -168,7 +167,7 @@ h1{
 }
 
 .xad-table-column{
-    background-color: white;
+    background-color: rgb(97, 88, 88);
     color: black;
     margin: 2px;
     padding: 10px;
@@ -193,7 +192,7 @@ h1{
 }
 
 .xad-header {
-    background-color: rgba(54, 163, 236, 1);
+    background-color: rgb(109, 147, 172);
     font-weight: bolder;
 }
 
@@ -216,7 +215,7 @@ h1{
     top: 50px;
     position: absolute;
     margin-left: calc(50% - 250);
-    background-color: rgb(54,163,236);
+    background-color: rgb(70, 72, 73);
 }
 
 #newPersonModal input{
@@ -274,8 +273,9 @@ i{
     pointer-events: none;
 }
 
+/* The width is 100%, when the viewport is 800px or smaller */
 @media screen and (max-width: 800px) {
     .xad-table-container,.xad-table-row,.xad-table-column,::backdrop,.xad-name,.xad-phone,.xad-birthday,.xad-address,.xad-add-entry,.xad-edit,.xad-delete,.disable-modal,.enable-modal{
-      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+      width: 100%; 
     }
   }
