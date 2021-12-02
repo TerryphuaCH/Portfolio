@@ -11,7 +11,7 @@
 body{
   font-family: montserrat;
 
-
+/* This is to produce the navigation bar out*/
 }
 nav {
   background: rgb(37, 37, 37);
@@ -41,6 +41,8 @@ nav ul li a{
   border-radius: 3px;
   text-transform: uppercase;
 }
+
+/*When hover mouse over turns to the colour*/
 a.active,a:hover{
   background: grey;
   transition: .5s;
@@ -57,6 +59,9 @@ a.active,a:hover{
 #check{
   display: none;
 }
+
+/*Use for mobile view when website is in mobile view.
+The hamburger menu will show up once it is in mobile view*/
 @media (max-width: 1200px){
   label.logo{
     font-size: 30px;
@@ -88,6 +93,7 @@ a.active,a:hover{
   nav ul li a{
     font-size: 20px;
   }
+  /*When hovering at the hamburger menu it will be this colour if it is on the active page.*/
   a:hover,a.active{
     background: none;
     color: greenyellow;
@@ -177,6 +183,7 @@ h1 {
   line-height: 2.3;
 }
 
+/*use for footer design at the bottom of the page*/
 .footer {
    position: relative;
    left: 0;
@@ -197,7 +204,6 @@ h1 {
 
 
 
-
 body {
   font-family: "Quicksand", sans-serif;
   display: grid;
@@ -205,7 +211,7 @@ body {
   height: 100vh;
 }
 
-
+/*The container here is to surround the card*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -221,6 +227,7 @@ img {
   object-fit: cover;
 }
 
+/*The card and the layout flex and column*/
 .card {
   display: flex;
   flex-direction: column;
@@ -230,10 +237,7 @@ img {
   border-radius: 1em;
   background: #ECE9E6;
 background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-
 }
-
-
 
 .card__body {
   padding: 1rem;
@@ -243,59 +247,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 }
 
 
-.tag {
-  align-self: flex-start;
-  padding: .25em .75em;
-  border-radius: 1em;
-  font-size: .75rem;
-}
-
-.tag + .tag {
-  margin-left: .5em;
-}
-
-.tag-blue {
-  background: #56CCF2;
-background: linear-gradient(to bottom, #2F80ED, #56CCF2);
-  color: #fafafa;
-}
-
-.tag-brown {
-  background: #D1913C;
-background: linear-gradient(to bottom, #FFD194, #D1913C);
-  color: #fafafa;
-}
-
-.tag-red {
-  background: #cb2d3e;
-background: linear-gradient(to bottom, #ef473a, #cb2d3e);
-  color: #fafafa;
-}
 
 
 
-
-.card__body h4 {
-  font-size: 1.5rem;
-  text-transform: capitalize;
-}
-
-.card__footer {
-  display: flex;
-  padding: 1rem;
-  margin-top: auto;
-}
-
-.user {
-  display: flex;
-  gap: .5rem;
-}
-
-.user__image {
-  border-radius: 50%;
-}
-
-.user__info > small {
-  color: #666;
-}
 
