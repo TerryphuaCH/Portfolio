@@ -18,6 +18,7 @@ let enableDisableNameInput = (option) => {
         newPersonName.disabled = true;
 }
 
+/*will refresh the table. So, the contact details are sorted in order (A-Z)*/ */
 let refreshTable = () => {
     let xadsTableKeys = Object.keys(xadsTable);
     let tableContaier = document.getElementById('xadsTableContainer');
@@ -27,7 +28,8 @@ let refreshTable = () => {
     newTableBody.id = 'tableBody';
     tableContaier.appendChild(newTableBody);
 
-
+/*Simply to say, ‘let currentNameCol = document.createElement(‘div’); ‘ means that on the currentNameCol,
+ it will create an element base on the name you input on the “div” that represents the name. */
     for(let i = 0; i < xadsTableKeys.length;i++){
         let currentRow = document.createElement('div');
         let currentNameCol = document.createElement('div');
@@ -63,6 +65,8 @@ let refreshTable = () => {
         newTableBody.appendChild(currentRow);
     }
 
+    /*this is the function to create and add in a contact detail, 
+    allowing user to key in their contact details.*/
     let enableDisableNewUserModal = (option) => {
         let newPersonName = document.getElementById('newPersonName');
         let newPersonPhone = document.getElementById('newPersonPhone');
@@ -79,13 +83,23 @@ let refreshTable = () => {
         newPersonModal.className = `${option}-modal`;
         backdrop.className = `${option}-modal`;
     }
+
+    /*Functions to add a new contact detail, 
+    edit the contact, and delete the contact */
     let addNewEntryBtn = document.getElementById('xadAddNewEntry');
     let editBtns = document.getElementsByClassName('xad-edit');
     let deleteBtns = document.getElementsByClassName('xad-delete');
 
+    /*After clicking on the (Plus sign) add button, 
+    to create the new contact detail, there is a Submit btn and cancel btn  */
     let newPersonSubmitBtn = document.getElementById('newPersonSubmitButton');
     let newPersonCancelBtn = document.getElementById('newCancelButton');
 
+
+    /*  This link to the previous Line 66-87
+    -	.addEventLister(‘click’ () => allows users to click on the icon of various functions
+    -	At line 120, localStorage.setItem~~~ allows the contact details to save at a local storage,
+     hence it will refresh the table and show the contact details. */
     newPersonSubmitBtn.addEventListener('click', () => {
         let newPersonName = document.getElementById('newPersonName').value.trim();
         let newPersonAddress = document.getElementById('newPersonAddress').value.trim();
@@ -121,6 +135,8 @@ let refreshTable = () => {
             enableDisableNewUserModal('disable');
             refreshTable();
         }
+
+        /*Just click functions Submit and cancel btn for in the filling in of the contact details. */
     });
     newPersonCancelBtn.addEventListener('click', () =>{
         enableDisableNewUserModal('disable');
@@ -146,6 +162,12 @@ let refreshTable = () => {
             enableDisableNameInput('disable');
         })
     }
+
+    /*
+    Edit function for contact details
+    Allows users to edit their contact when there is a change in
+    contact or wrong details
+    */
     for(let i = 0; i < deleteBtns.length; i++){
         deleteBtns[i].addEventListener('click', ($event) => {
             let nameToDelete = $event.target.parentElement.children[0].innerText;
@@ -158,6 +180,10 @@ let refreshTable = () => {
 
 }
 
+/*
+    Delete function to delete contacts
+    There will be a pop up to confirm if users want to delete it to prevent 
+    any deleting of contact by accident */
 let deleteUserFromTable = (userName) => {
     let tempTable = {};
     let xadsTableKeys = Object.keys(xadsTable);
