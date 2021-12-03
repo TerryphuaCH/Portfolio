@@ -131,7 +131,7 @@ nav ul li a.current{
 
 
 body{
-    width: 1;
+    width: 100%;
     color: white;
     background-size: auto;
     background-repeat: no-repeat;
@@ -158,7 +158,7 @@ h1{
 }
 .xad-table-row{
     display: flex;
-    position: 50px;
+    
 }
 #SortButton{
     color: white;
